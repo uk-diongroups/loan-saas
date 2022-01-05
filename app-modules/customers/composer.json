@@ -1,0 +1,24 @@
+{
+	"name": "modules/customers",
+	"description": "",
+	"type": "library",
+	"version": "1.0",
+	"license": "proprietary",
+	"require": {},
+	"autoload": {
+		"psr-4": {
+			"Modules\\Customers\\": "src/",
+			"Modules\\Customers\\Tests\\": "tests/",
+			"Modules\\Customers\\Database\\Factories\\": "database/factories/",
+			"Modules\\Customers\\Database\\Seeders\\": "database/seeders/"
+		}
+	},
+	"minimum-stability": "stable",
+	"extra": {
+		"laravel": {
+			"providers": [
+				"Modules\\Customers\\Providers\\CustomersServiceProvider"
+			]
+		}
+	}
+}
